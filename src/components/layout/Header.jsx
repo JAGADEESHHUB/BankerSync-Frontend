@@ -37,10 +37,10 @@ const Header = ({ toggleSidebar }) => {
             variant="h6"
             sx={{
               fontFamily: '"Montserrat", sans-serif',
-              fontWeight: 700,
+              fontWeight: 300,
               letterSpacing: '0.2rem',
               color: '#fff',
-              textShadow: '0 0 10px #03e9f4, 0 0 20px #03e9f4, 0 0 30px #03e9f4',
+              textShadow: '0 0 5px #03e9f4, 0 0 10px #03e9f4, 0 0 15px #03e9f4',
               fontSize: '1.8rem'
             }}
           >
