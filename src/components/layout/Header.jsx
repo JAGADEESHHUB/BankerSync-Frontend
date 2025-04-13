@@ -33,11 +33,19 @@ const Header = ({ toggleSidebar }) => {
           <MenuIcon />
         </IconButton>
         <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <img
-            src="/src/assets/FullLogo_Transparent_NoBuffer.png"
-            alt="BankerSync Logo"
-            style={{ height: '40px', width: 'auto' }}
-          />
+          <Typography
+            variant="h6"
+            sx={{
+              fontFamily: '"Montserrat", sans-serif',
+              fontWeight: 700,
+              letterSpacing: '0.2rem',
+              color: '#fff',
+              textShadow: '0 0 10px #03e9f4, 0 0 20px #03e9f4, 0 0 30px #03e9f4',
+              fontSize: '1.8rem'
+            }}
+          >
+            BANKERSYNC
+          </Typography>
         </Box>
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
           <Button 

@@ -42,11 +42,7 @@ const LoginPage = () => {
       <AnimatedBackground />
       <div className="neon-login-box">
         <div className="logo-container">
-          <img
-            src="/src/assets/FullLogo_Transparent_NoBuffer.png"
-            alt="BankerSync Logo"
-          />
-          <h2>Login to BankerSync</h2>
+          <div className="text-logo">BANKERSYNC</div>
         </div>
         
         <form onSubmit={handleSubmit}>
