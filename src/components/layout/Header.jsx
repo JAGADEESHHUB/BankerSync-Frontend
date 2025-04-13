@@ -41,7 +41,7 @@ const Header = ({ toggleSidebar }) => {
               letterSpacing: '0.2rem',
               color: '#fff',
               textShadow: '0 0 5px #03e9f4, 0 0 10px #03e9f4, 0 0 15px #03e9f4',
-              fontSize: '1.8rem'
+              fontSize: '1.6rem'
             }}
           >
             BANKER SYNC
