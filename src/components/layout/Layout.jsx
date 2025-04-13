@@ -12,11 +12,15 @@ const Layout = ({ children }) => {
     setSidebarOpen(!sidebarOpen);
   };
   
+  const closeSidebar = () => {
+    setSidebarOpen(false);
+  };
+  
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', position: 'relative' }}>
       <AnimatedBackground />
       <Header toggleSidebar={toggleSidebar} />
-      <Sidebar open={sidebarOpen} />
+      <Sidebar open={sidebarOpen} closeSidebar={closeSidebar} />
       <Box
         component="main"
         sx={{

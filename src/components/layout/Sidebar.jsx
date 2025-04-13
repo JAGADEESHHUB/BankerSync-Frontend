@@ -14,7 +14,7 @@ const sidebarItems = [
   { text: 'AI Chat', icon: <Chat />, path: '/ai-chat' },
 ];
 
-const Sidebar = ({ open }) => {
+const Sidebar = ({ open, closeSidebar }) => {
   const navigate = useNavigate();
   const location = useLocation();
   const { mode, toggleTheme } = useTheme();
@@ -64,7 +64,10 @@ const Sidebar = ({ open }) => {
             <ListItem
               button
               key={item.text}
-              onClick={() => navigate(item.path)}
+              onClick={() => {
+                navigate(item.path);
+                closeSidebar();
+              }}
               className={`${styles.listItem} ${location.pathname === item.path ? styles.selected : ''}`}
             >
               <ListItemIcon sx={{ color: 'inherit' }}>{item.icon}</ListItemIcon>
