@@ -1,0 +1,76 @@
+:root {
+  --main-bg: #f5f4fd;
+  --item-hover: #f9f8fb;
+  --secondary-bg: #251d33;
+  --main-container-bg: #fff;
+  --container-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --text-color: #00071d;
+}
+
+[data-theme='dark'] {
+  --main-bg: #00071d;
+  --item-hover: #1c2339;
+  --secondary-bg: #36415e;
+  --main-container-bg: #131c31;
+  --text-color: #fff;
+  --container-shadow: rgba(19, 28, 49, 0.2) 0px 7px 29px 0px;
+}
+
+.sidebarWrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.themeContainer {
+  padding: 16px;
+}
+
+.themeToggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--main-bg);
+  border-radius: 4px;
+  padding: 4px;
+  position: relative;
+  cursor: pointer;
+}
+
+.themeType {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  z-index: 1;
+  color: var(--text-color);
+}
+
+.themeSlider {
+  position: absolute;
+  width: calc(50% - 4px);
+  height: calc(100% - 8px);
+  background-color: var(--main-container-bg);
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+  left: 4px;
+}
+
+.themeToggle[data-theme='dark'] .themeSlider {
+  transform: translateX(100%);
+}
+
+.listItem {
+  margin: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.listItem:hover {
+  background-color: var(--item-hover);
+}
+
+.listItem.selected {
+  background-color: var(--main-bg);
+}
