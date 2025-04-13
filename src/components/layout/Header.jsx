@@ -44,7 +44,7 @@ const Header = ({ toggleSidebar }) => {
               fontSize: '1.6rem'
             }}
           >
-            BANKER SYNC
+            BANKERSYNC
           </Typography>
         </Box>
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
